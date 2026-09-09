@@ -1,10 +1,5 @@
 import { createClient, type SdkworkAppClient } from '@sdkwork/iam-app-sdk';
-import {
-  createTokenManager,
-  resolveBaseUrl,
-  type AuthTokenManager,
-  type AuthTokens,
-} from '@sdkwork/sdk-common';
+import {createTokenManager, resolveBaseUrlWithAlignProtocol, type AuthTokenManager, type AuthTokens} from '@sdkwork/sdk-common';
 
 import { getPlatformApiGatewayHttpUrl } from './environment';
 import {
@@ -64,7 +59,7 @@ function bindSessionPersistence(tokenManager: AuthTokenManager): void {
 function createAppbaseAppClient(tokenManager: AuthTokenManager): SdkworkAppClient {
   return createClient({
     authMode: 'dual-token',
-    baseUrl: resolveBaseUrl({ baseUrls: [getPlatformApiGatewayHttpUrl()] }).url,
+    baseUrl: resolveBaseUrlWithAlignProtocol({ baseUrls: [getPlatformApiGatewayHttpUrl()] }).url,
     platform: 'h5',
     tokenManager,
   });

@@ -1,4 +1,4 @@
-import { resolveBaseUrl } from '@sdkwork/sdk-common';
+import {resolveBaseUrlWithAlignProtocol} from '@sdkwork/sdk-common';
 
 export const Environment = {
   development: 'development',
@@ -55,5 +55,5 @@ export function getPlatformApiGatewayHttpUrl(): string {
 
   // Resolve the shared SDKWORK_API_BASE_URL through @sdkwork/sdk-common (env +
   // brand + protocol aware), eliminating the hardcoded api.sdkwork.com default.
-  return resolveBaseUrl().url;
+  return resolveBaseUrlWithAlignProtocol().url;
 }

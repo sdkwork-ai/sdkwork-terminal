@@ -8,8 +8,8 @@ environment = "production"
 bind = "127.0.0.1:3900"
 
 [cors]
-allowAnyOrigin = true
-allowedOrigins = []
+allowAnyOrigin = false
+allowedOrigins = ["http://localhost:3900", "http://127.0.0.1:3900", "app://dsh", "app://birdcoder", "app://sdkwork", "app://dtupay", "tauri://localhost", "https://servicewechat.com"]
 
 [request]
 maxBodyBytes = 33554432

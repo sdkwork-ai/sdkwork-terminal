@@ -1,8 +1,11 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-routes-terminal-app-api"
 version.workspace = true
 edition.workspace = true
 
+[lints]
+workspace = true
 [dependencies]
 async-trait = "0.1"
 axum = { version = "0.8", features = ["json"] }

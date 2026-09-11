@@ -1,7 +1,10 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-terminal-terminal-core"
 version.workspace = true
 edition.workspace = true
 
+[lints]
+workspace = true
 [lib]
 path = "src/lib.rs"

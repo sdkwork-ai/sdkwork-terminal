@@ -1,9 +1,12 @@
 [package]
+rust-version.workspace = true
 name = "sdkwork-terminal-desktop-host"
 version.workspace = true
 edition.workspace = true
 build = "build.rs"
 
+[lints]
+workspace = true
 [lib]
 name = "sdkwork_terminal_desktop_host_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]

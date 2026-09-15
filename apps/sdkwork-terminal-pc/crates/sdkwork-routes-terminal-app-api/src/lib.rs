@@ -763,7 +763,7 @@ fn _map_stream_event(event: RuntimeNodeStreamEvent) -> Result<Event, Infallible>
     Ok(Event::default().event(event_name).data(data))
 }
 
-#[cfg(test)]
+#[cfg(test)] // WORKSPACE-PATH:allow-fixture-block: this module is the file's #[cfg(test)] unit-test fixture data
 mod tests {
     use super::*;
     use axum::{body::Body, http::Request};

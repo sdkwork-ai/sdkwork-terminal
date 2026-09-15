@@ -1,6 +1,6 @@
 ﻿[run-full-verification] workspace-tests
 
-> @sdkwork/terminal-workspace@0.2.59 test E:\sdkwork-space\sdkwork-terminal\apps\sdkwork-terminal-pc
+> @sdkwork/terminal-workspace@0.2.59 test <workspace-root>/sdkwork-terminal\apps\sdkwork-terminal-pc
 > node tools/scripts/run-workspace-tests.mjs
 
 TAP version 13
@@ -524,7 +524,7 @@ ok 1 - desktop tauri capability grants snake_case bridge commands through app-ow
 # duration_ms 6.9606
 [run-full-verification] typescript-probes
 
-> @sdkwork/terminal-workspace@0.2.59 verify:typescript-probes E:\sdkwork-space\sdkwork-terminal\apps\sdkwork-terminal-pc
+> @sdkwork/terminal-workspace@0.2.59 verify:typescript-probes <workspace-root>/sdkwork-terminal\apps\sdkwork-terminal-pc
 > node tools/scripts/run-typescript-probe-tests.mjs
 
 runtime event name contract passed.
@@ -1878,14 +1878,14 @@ not ok 225 - architecture standard stays aligned with the published shell packag
   ---
   duration_ms: 0.2095
   type: 'test'
-  location: 'E:\\sdkwork-space\\sdkwork-terminal\\apps\\sdkwork-terminal-pc\\tests\\shell-integration-surface.test.ts:237:1'
+  location: '<workspace-root>/sdkwork-terminal\\apps\\sdkwork-terminal-pc\\tests\\shell-integration-surface.test.ts:237:1'
   failureType: 'testCodeFailure'
-  error: "ENOENT: no such file or directory, open 'E:\\sdkwork-space\\sdkwork-terminal\\apps\\sdkwork-terminal-pc\\docs\\??\\19-??????????.md'"
+  error: "ENOENT: no such file or directory, open '<workspace-root>/sdkwork-terminal\\apps\\sdkwork-terminal-pc\\docs\\??\\19-??????????.md'"
   code: 'ENOENT'
   stack: |-
     Object.readFileSync (node:fs:441:20)
-    readFile (file:///E:/sdkwork-space/sdkwork-terminal/apps/sdkwork-terminal-pc/tests/shell-integration-surface.test.ts:10:13)
-    TestContext.<anonymous> (file:///E:/sdkwork-space/sdkwork-terminal/apps/sdkwork-terminal-pc/tests/shell-integration-surface.test.ts:238:32)
+    readFile (file:///<workspace-root>/sdkwork-terminal/apps/sdkwork-terminal-pc/tests/shell-integration-surface.test.ts:10:13)
+    TestContext.<anonymous> (file:///<workspace-root>/sdkwork-terminal/apps/sdkwork-terminal-pc/tests/shell-integration-surface.test.ts:238:32)
     Test.runInAsyncScope (node:async_hooks:214:14)
     Test.run (node:internal/test_runner/test:1047:25)
     Test.processPendingSubtests (node:internal/test_runner/test:744:18)
@@ -2356,7 +2356,7 @@ ok 302 - terminal async boundary contains synchronous throws and reports the cau
   type: 'test'
   ...
 node : [terminal:error] error-handler: reporter failed
-所在位置 C:\Users\admin\AppData\Local\Temp\ps-script-d853b97a-a729-4ea3-a46b-a800cc77c9c9.ps1:122 字符: 76
+所在位置 <home>\AppData\Local\Temp\ps-script-d853b97a-a729-4ea3-a46b-a800cc77c9c9.ps1:122 字符: 76
 + ... rminal-pc"; node tools/scripts/run-full-verification.mjs 2>&1 | Out-F ...
 +                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: ([terminal:error...reporter failed:String) [], RemoteException

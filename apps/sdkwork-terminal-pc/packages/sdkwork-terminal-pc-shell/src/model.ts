@@ -462,6 +462,8 @@ function resolveHomeDirectory(): string {
   }
 
   if (typeof navigator !== "undefined" && /windows/i.test(navigator.userAgent)) {
+    // A Windows profile root is on the system drive for every install, so this is
+    // the OS contract rather than a machine binding. WORKSPACE-PATH:allow
     return "C:\\Users";
   }
 

@@ -4,6 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "dependencies": {
-    "@sdkwork/terminal-pc-shell": "workspace:*"
+    "@sdkwork/terminal-pc-shell": "0.0.0"
   }
 }

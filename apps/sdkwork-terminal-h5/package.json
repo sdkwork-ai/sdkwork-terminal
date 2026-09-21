@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@sdkwork/iam-app-sdk": "workspace:*",
+    "@sdkwork/iam-credential-entry": "workspace:*",
     "@sdkwork/sdk-common": "^1.0.2",
     "@sdkwork/terminal-h5-shell": "workspace:*",
     "react": "catalog:",

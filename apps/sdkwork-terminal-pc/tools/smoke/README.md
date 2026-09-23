@@ -21,7 +21,7 @@
 - `node tools/smoke/session-recovery-probe.mjs --review-template --platform ubuntu-server --host-mode server --cpu-arch x64` 可输出 markdown recovery review 模板，固化桌面 `session-runtime.sqlite3` 路径约束、server `session-runtime.sqlite3` persistence root 约束与 `Ubuntu Server` 恢复证据清单。
 - `web-remote-runtime-smoke-probe.mjs` 用于输出 Step 07 `CP07-5` remote-runtime web bridge / SSE recovery smoke 计划、结构化 report template 与 markdown review template。
 - `node tools/smoke/web-remote-runtime-smoke-probe.mjs --print-plan` 可输出 web remote-runtime 自动化证据矩阵（`web-runtime-bridge`、`runtime-tab-controller`、`runtime-node host`）。
-- `node tools/smoke/web-remote-runtime-smoke-probe.mjs --review-template --platform ubuntu-server --runtime-target remote-runtime` 可输出 web shell 手工 smoke 与 topology runtime env 复核清单。
+- `node tools/smoke/web-remote-runtime-smoke-probe.mjs --review-template --platform ubuntu-server` 可输出 web shell 手工 smoke 与 topology runtime env 复核清单。
 - `node tools/smoke/connector-interactive-probe.mjs --report-template --platform ubuntu-desktop --target docker-exec --shell bash` 可输出结构化 live terminal report 模板，覆盖 `interactive create / live input echo / resize / replay-and-exit / session-center-reattach / restart-and-recover / multi-tab repeat launch`。
 - `node tools/smoke/connector-interactive-probe.mjs --review-template --platform macos-desktop --target kubernetes-exec --shell zsh` 可输出 markdown review 模板，固化 `ssh / docker-exec / kubernetes-exec` 的产品入口、真实 live terminal、Session Center reattach 与 recovery 证据检查项。
 

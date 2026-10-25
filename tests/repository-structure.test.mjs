@@ -152,7 +152,7 @@ test('h5 application resolves the composed IAM app sdk facade through source pat
 });
 
 test('pc app manifest avoids placeholder checksum digests before release finalization', () => {
-  const manifest = JSON.parse(readUtf8('apps/sdkwork-terminal-pc/sdkwork.app.config.json'));
+  const manifest = JSON.parse(readUtf8('apps/sdkwork-terminal-pc/agent.app.config.json'));
   const packages = manifest.artifacts?.installConfig?.packages ?? [];
   const placeholderPattern = /^([0-9a-f]{8})\1{7}$/i;
 

@@ -20,7 +20,7 @@ Do not copy root standard text into this repository. If these relative paths do 
 
 ## Application Identity
 
-Read `apps/sdkwork-terminal-pc/sdkwork.app.config.json` before changing application behavior, runtime config, SDK wiring, release metadata, or app-owned capabilities.
+Read `apps/sdkwork-terminal-pc/agent.app.config.json` before changing application behavior, runtime config, SDK wiring, release metadata, or app-owned capabilities.
 
 ## Local Dictionary Structure
 
@@ -28,7 +28,7 @@ Read `apps/sdkwork-terminal-pc/sdkwork.app.config.json` before changing applicat
 - `CLAUDE.md`: Claude Code compatibility shim that points to `AGENTS.md` and must not duplicate rules.
 - `GEMINI.md`: Gemini CLI compatibility shim that points to `AGENTS.md` and must not duplicate rules.
 - `CODEX.md`: Codex compatibility shim that points to `AGENTS.md` and must not duplicate rules.
-- `apps/sdkwork-terminal-pc/sdkwork.app.config.json`: application identity and owned capability metadata.
+- `apps/sdkwork-terminal-pc/agent.app.config.json`: application identity and owned capability metadata.
 - `.sdkwork/`: reserved local dictionary folder; create only for local skills, plugins, manifests, or AI workspace metadata.
 - `apps/sdkwork-terminal-pc/specs/`: local application/component contracts and narrowing rules.
 - `sdks/`: not present here; use only for SDK authority or generation surfaces.
@@ -52,7 +52,7 @@ Read `apps/sdkwork-terminal-pc/sdkwork.app.config.json` before changing applicat
 ## Spec Resolution Order
 
 1. Read this `AGENTS.md` and any nearer component-level `AGENTS.md`.
-2. Read `apps/sdkwork-terminal-pc/sdkwork.app.config.json` when present.
+2. Read `apps/sdkwork-terminal-pc/agent.app.config.json` when present.
 3. Read local `apps/sdkwork-terminal-pc/specs/README.md` and `apps/sdkwork-terminal-pc/specs/component.spec.json` when present.
 4. Read local `.sdkwork/README.md`, `.sdkwork/skills/`, and `.sdkwork/plugins/` when relevant.
 5. Read `../sdkwork-specs/README.md` and the task-specific root specs.

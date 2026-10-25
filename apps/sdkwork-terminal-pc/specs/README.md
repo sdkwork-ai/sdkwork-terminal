@@ -26,7 +26,7 @@ Root SDKWork standards remain authoritative. Local component specs can narrow or
 
 | Spec | Applies Because |
 | --- | --- |
-| [APP_MANIFEST_SPEC.md](../../../../sdkwork-specs/APP_MANIFEST_SPEC.md) | sdkwork.app.config.json application registration rules. |
+| [APP_MANIFEST_SPEC.md](../../../../sdkwork-specs/APP_MANIFEST_SPEC.md) | agent.app.config.json application registration rules. |
 | [APPLICATION_SPEC.md](../../../../sdkwork-specs/APPLICATION_SPEC.md) | Application shell and module composition. |
 | [APP_PC_ARCHITECTURE_SPEC.md](../../../../sdkwork-specs/APP_PC_ARCHITECTURE_SPEC.md) | PC application root architecture. |
 | [DESKTOP_APP_ARCHITECTURE_SPEC.md](../../../../sdkwork-specs/DESKTOP_APP_ARCHITECTURE_SPEC.md) | Tauri desktop host architecture. |

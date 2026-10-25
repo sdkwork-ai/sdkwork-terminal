@@ -42,9 +42,9 @@ Per [`SDKWORK_WORKSPACE_SPEC.md`](../sdkwork-specs/SDKWORK_WORKSPACE_SPEC.md), t
 
 | Root | Framework | Manifest |
 | --- | --- | --- |
-| [`apps/sdkwork-terminal-pc/`](./apps/sdkwork-terminal-pc/) | React + Tauri | `sdkwork.app.config.json` |
-| [`apps/sdkwork-terminal-h5/`](./apps/sdkwork-terminal-h5/) | React + Vite | `sdkwork.app.config.json` |
-| [`apps/sdkwork-terminal-flutter-mobile/`](./apps/sdkwork-terminal-flutter-mobile/) | Flutter | `sdkwork.app.config.json` |
+| [`apps/sdkwork-terminal-pc/`](./apps/sdkwork-terminal-pc/) | React + Tauri | `agent.app.config.json` |
+| [`apps/sdkwork-terminal-h5/`](./apps/sdkwork-terminal-h5/) | React + Vite | `agent.app.config.json` |
+| [`apps/sdkwork-terminal-flutter-mobile/`](./apps/sdkwork-terminal-flutter-mobile/) | Flutter | `agent.app.config.json` |
 
 PC application architecture exceptions: [`apps/sdkwork-terminal-pc/specs/GOVERNANCE_EXCEPTIONS.md`](./apps/sdkwork-terminal-pc/specs/GOVERNANCE_EXCEPTIONS.md).
 

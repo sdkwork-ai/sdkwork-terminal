@@ -240,7 +240,7 @@ async function run() {
   const profileEnv = loadProfile(profileId);
   const baseRuntimeEnv = mergeRepoDevBootstrapAccessTokenEnv({
     repoRoot: REPO_ROOT,
-    manifestPath: 'apps/sdkwork-terminal-pc/sdkwork.app.config.json',
+    manifestPath: 'apps/sdkwork-terminal-pc/agent.app.config.json',
     appId: 'sdkwork-terminal',
     env: mergeRuntimeEnv(process.env, profileEnv, resolveIamDevEnv(process.env), IAM_APPLICATION_BOOTSTRAP_ENV, {
       SDKWORK_TERMINAL_DEPLOYMENT_PROFILE: settings.deploymentProfile,

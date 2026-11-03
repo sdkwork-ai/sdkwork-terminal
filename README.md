@@ -24,7 +24,7 @@ Per [`SDKWORK_WORKSPACE_SPEC.md`](../sdkwork-specs/SDKWORK_WORKSPACE_SPEC.md), t
 | Directory | Status | Purpose |
 | --- | --- | --- |
 | [`apps/`](./apps/) | Active | Application roots: PC, H5, Flutter mobile |
-| [`configs/`](./configs/) | Active | Topology profile env files |
+| [`etc/configs/`](./etc/configs/) | Active | Topology profile env files |
 | [`specs/`](./specs/) | Active | Repository contracts (`topology.spec.json`, alignment docs) |
 | [`scripts/`](./scripts/) | Active | Thin topology orchestration entrypoints |
 | [`tests/`](./tests/) | Active | Cross-package topology and repository structure tests |
